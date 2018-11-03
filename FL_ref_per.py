@@ -55,7 +55,7 @@ def m_rungekutta4per_E(func, y_0, t, args={}):
         y[i][:2*M:2]=y[i][:2*M:2]%(LXf-LX0)
         y[i][2*M:4*M:2]=y[i][2*M:4*M:2]%(LYf-LY0)
         Ene[i] = Energy(t[i],y[i],args)
-    return(y)
+    return(y,Ene)
 
 
 def graficar_fase_pendulo(t,y):
