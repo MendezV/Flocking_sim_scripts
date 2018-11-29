@@ -91,7 +91,7 @@ def graficar_fase_pendulo(t,y):
 ####################
 # Condiciones Iniciales
 # angulos pequeños
-M=30
+M=int(sys.argv[1])
 D=2 #2 dimensions
 c_i_mult = np.zeros(D*2*M)
 
@@ -218,10 +218,10 @@ def Vext(yi,wi,t):
 	return np.cos(yi-t)+np.cos(wi-t)
 
 def extFX(yi,wi,t):
-	return np.sin(yi-t)
+	return 0*np.sin(yi-t)
 
 def extFY(yi,wi,t):
-	return np.sin(wi-t)
+	return 0*np.sin(wi-t)
 
 ####################
 
